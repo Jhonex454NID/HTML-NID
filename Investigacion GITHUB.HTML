@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Investigación sobre GitHub</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    code {
+      background-color: #eee;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    pre {
+      background-color: #eee;
+      padding: 15px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .video-container {
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Investigación sobre GitHub</h1>
+
+  <div class="section" id="que-es-github">
+    <h2>¿Qué es GitHub?</h2>
+    <p>
+      GitHub es una plataforma basada en la web que utiliza el sistema de control de versiones Git para alojar y gestionar proyectos de software. Permite a desarrolladores colaborar en proyectos, hacer seguimiento de cambios en el código, manejar diferentes versiones y coordinar el trabajo en equipo.
+    </p>
+  </div>
+
+  <div class="section" id="ventajas">
+    <h2>Ventajas de GitHub</h2>
+    <ul>
+      <li><strong>Colaboración sencilla:</strong> múltiples usuarios pueden trabajar simultáneamente en un proyecto sin perder control de versiones.</li>
+      <li><strong>Control de versiones:</strong> permite revertir cambios y manejar diferentes ramas (branches) para desarrollo paralelo.</li>
+      <li><strong>Integración con herramientas:</strong> soporte para CI/CD, gestión de incidencias, wikis y más.</li>
+      <li><strong>Hosting gratuito:</strong> para proyectos públicos y sitios web estáticos mediante GitHub Pages.</li>
+      <li><strong>Amplia comunidad:</strong> millones de desarrolladores y miles de proyectos open source.</li>
+    </ul>
+  </div>
+
+  <div class="section" id="desventajas">
+    <h2>Desventajas de GitHub</h2>
+    <ul>
+      <li><strong>Curva de aprendizaje:</strong> Git y GitHub pueden ser difíciles para principiantes.</li>
+      <li><strong>Privacidad limitada en planes gratuitos:</strong> los repositorios privados tienen restricciones en planes gratuitos.</li>
+      <li><strong>Dependencia de conexión a internet:</strong> para trabajar colaborativamente se requiere conexión constante.</li>
+      <li><strong>Puede ser complejo para proyectos muy grandes:</strong> la gestión de muchos archivos o repositorios puede complicarse.</li>
+    </ul>
+  </div>
+
+  <div class="section" id="datos-curiosos">
+    <h2>Datos Curiosos sobre GitHub</h2>
+    <ul>
+      <li>GitHub fue lanzado en 2008 por Tom Preston-Werner, Chris Wanstrath y PJ Hyett.</li>
+      <li>En 2018, Microsoft adquirió GitHub por 7.5 mil millones de dólares.</li>
+      <li>GitHub aloja más de 100 millones de repositorios activos (a 2024).</li>
+      <li>Git, el sistema de control de versiones en que se basa GitHub, fue creado por Linus Torvalds, el creador de Linux.</li>
+      <li>GitHub ofrece un sistema llamado "Actions" para automatizar tareas como pruebas y despliegues.</li>
+    </ul>
+  </div>
+
+  <div class="section" id="como-subir-pagina">
+    <h2>¿Cómo subir una página a GitHub para hostearla?</h2>
+    <p>Aquí te explicamos paso a paso cómo subir una página web estática para publicarla usando <strong>GitHub Pages</strong>:</p>
+
+    <ol>
+      <li><strong>Crea un repositorio nuevo</strong> en tu cuenta de GitHub. Puedes nombrarlo como quieras.</li>
+      <li><strong>Clona el repositorio</strong> en tu computadora, o usa la opción de subir archivos desde la interfaz web.</li>
+      <li><strong>Agrega tu página web</strong>, generalmente al menos un archivo <code>index.html</code>.</li>
+      <li><strong>Haz un commit y sube los cambios</strong> al repositorio.</li>
+      <li><strong>Activa GitHub Pages</strong> en la configuración del repositorio:
+        <ul>
+          <li>Ve a la pestaña <em>Settings</em> (Configuración) del repositorio.</li>
+          <li>Busca la sección <em>Pages</em>.</li>
+          <li>Selecciona la rama <code>main</code> (o <code>master</code>) y la carpeta raíz (root) para publicar.</li>
+          <li>Guarda los cambios y espera unos minutos.</li>
+        </ul>
+      </li>
+      <li><strong>Accede a tu página web</strong> desde la URL que GitHub te proporcionará, usualmente <code>https://tu-usuario.github.io/nombre-del-repositorio/</code>.</li>
+    </ol>
+
+    <h3>Ejemplo usando Git en la terminal:</h3>
+    <pre><code>git clone https://github.com/tu-usuario/nombre-del-repositorio.git
+cd nombre-del-repositorio
+# Coloca aquí tus archivos web (index.html, css, js, etc)
+git add .
+git commit -m "Agrega página web"
+git push origin main
+</code></pre>
+
+    <p>Luego configuras GitHub Pages en la configuración del repositorio y listo, tu sitio estará en línea.</p>
+  </div>
+
+  <div class="video-container">
+    <h2>Video explicativo sobre GitHub</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=aaEeEpOC-EQ" 
+  title="Video de ejemplo" frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
+  </div>
+
+  <footer style="text-align:center; margin-top: 50px; font-size: 0.9em; color:#888;">
+    <p>Investigación realizada por [Cedeño Mora Jhon Exar] - 2025</p>
+  </footer>
+</body>
+</html>
