@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PROYECTO DEL AREA TECNICA 2025-2026</title>
+<style>
+    body {
+        background-color: #f0f0f0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #333;
+        padding: 20px;
+    }
+
+    /* Contenedor título + imagen */
+    .titulo-container {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+
+    .titulo-container img {
+        height: 70px;
+        width: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.15);
+        user-select: none;
+    }
+
+    /* Animaciones */
+    @keyframes moverP {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-15px); }
+    }
+    @keyframes mover6 {
+        0%, 100% { transform: translateX(0); }
+        50% { transform: translateX(15px); }
+    }
+
+    .animP {
+        font-weight: 900;
+        font-size: 3rem;
+        color: #98FF98;
+        -webkit-text-stroke: 1.2px #005500;
+        text-stroke: 1.2px #005500;
+        animation: moverP 2s ease-in-out infinite;
+        user-select: none;
+        line-height: 70px;
+    }
+
+    .anim6 {
+        font-weight: 900;
+        font-size: 3rem;
+        color: #ffc0cb;
+        -webkit-text-stroke: 1.2px #800000;
+        text-stroke: 1.2px #800000;
+        animation: mover6 2s ease-in-out infinite;
+        user-select: none;
+        line-height: 70px;
+    }
+
+    h1.titulo {
+        font-weight: 700;
+        font-size: 2.3rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 900px;
+        line-height: 70px;
+        user-select: none;
+    }
+    h1.titulo span {
+        font-weight: 700;
+        -webkit-text-stroke: 0.7px black;
+        text-stroke: 0.7px black;
+        margin: 0 2px;
+        font-size: 1.8rem;
+        line-height: 70px;
+    }
+
+    /* Menú principal */
+    .menu {
+        list-style: none;
+        background-color: #ff8c42;
+        max-width: 900px;
+        margin: 0 auto 50px auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        overflow: visible;
+        display: flex;
+        justify-content: flex-start;
+        font-weight: bold;
+        user-select: none;
+        padding-left: 0;
+    }
+    .menu > li {
+        position: relative; /* clave para posicionar submenu */
+    }
+    .menu > li > a {
+        display: block;
+        padding: 16px 25px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.1rem;
+        transition: background-color 0.3s ease;
+        white-space: nowrap;
+    }
+    .menu > li > a:hover {
+        background-color: #ffa74d;
+        cursor: pointer;
+    }
+
+    /* Submenu para Diseño Web */
+    .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #ffbb80;
+        border-radius: 0 0 8px 8px;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        min-width: 180px;
+        z-index: 20;
+    }
+    .submenu li {
+        border-bottom: 1px solid #ff9933;
+    }
+    .submenu li:last-child {
+        border-bottom: none;
+    }
+    .submenu li a {
+        padding: 12px 20px;
+        color: #333;
+        font-weight: normal;
+        font-size: 1rem;
+        display: block;
+        text-decoration: none;
+        transition: background-color 0.2s ease;
+    }
+    .submenu li a:hover {
+        background-color: #ffd699;
+        cursor: pointer;
+    }
+
+    /* Mostrar submenu sólo en Diseño Web al hover */
+    .menu > li:first-child:hover > .submenu {
+        display: block;
+    }
+</style>
+</head>
+<body>
+
+<div class="titulo-container">
+    <img src="NID.png" alt="Escudo de la institución" />
+    <span class="animP">P</span>
+    <h1 class="titulo" aria-label="PROYECTO DEL AREA TECNICA 2025-2026">
+        <span style="color:#FDCB6E;">R</span>
+        <span style="color:#A4D9D6;">O</span>
+        <span style="color:#F8CEEC;">Y</span>
+        <span style="color:#B0E0E6;">E</span>
+        <span style="color:#E6E6FA;">C</span>
+        <span style="color:#FFDAB9;">T</span>
+        <span style="color:#FFFACD;">O</span>
+        <span style="color:#F0F8FF;">D</span>
+        <span style="color:#C5E1A5;">E</span>
+        <span style="color:#E0B0FF;">L</span>
+        <span style="color:#7FFFD4;">A</span>
+        <span style="color:#FFDAB9;">R</span>
+        <span style="color:#A3FFAC;">E</span>
+        <span style="color:#FFCA99;"> </span>
+        <span style="color:#eaffc2;">T</span>
+        <span style="color:#ff8097;">E</span>
+        <span style="color:#ff85d5;">C</span>
+        <span style="color:#e79eff;">N</span>
+        <span style="color:#b8e4ff;">I</span>
+        <span style="color:#ff94a2;">C</span>
+        <span style="color:#ffe180;">A</span>
+        <span style="color:#f7cac9;">I</span>
+        <span style="color:#f8edeb;">N</span>
+        <span style="color:#ffe5b4;">F</span>
+        <span style="color:#c5e0dc;">O</span>
+        <span style="color:#a2c8cc;">R</span>
+        <span style="color:#ffd1dc;">M</span>
+        <span style="color:#ffb7c5;">A</span>
+        <span style="color:#ffc0cb;">T</span>
+        <span style="color:#f6a5c0;">I</span>
+        <span style="color:#f9b7ff;">C</span>
+        <span style="color:#ffcba4;">A</span>
+        <span style="color:#fdd7e4;"> 2 </span>
+        <span style="color:#ffb7c3;">0</span>
+        <span style="color:#ffe4e1;">2</span>
+        <span style="color:#ffdab9;">5</span>
+        <span class="anim6">6</span>
+    </h1>
+</div>
+
+<ul class="menu">
+    <li>
+        <a href="#">Diseño Web</a>
+        <ul class="submenu">
+            <li><a href="Investigacion GITHUB.HTML">1er Trimestre</a></li>
+            <li><a href="disenoweb_2do.html">2do Trimestre</a></li>
+            <li><a href="disenoweb_3er.html">3er Trimestre</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Sistemas Operativos y redes</a></li>
+    <li><a href="#">Soporte Técnico</a></li>
+    <li><a href="#">Programación y Base de Datos</a></li>
+</ul>
+
+</body>
+</html>
